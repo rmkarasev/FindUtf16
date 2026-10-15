@@ -23,7 +23,7 @@ if (-not (Test-Path -LiteralPath $root -PathType Container)) {
     throw "Root folder not found: $root"
 }
 
-$exclude = '\\(bin|obj|\.git|\$tf|\.vs)\\'
+$exclude = '\\(bin|obj|\.git|\$tf|\$tf1|\.vs)\\'
 $utf8    = New-Object Text.UTF8Encoding($false)
 $count   = 0
 
